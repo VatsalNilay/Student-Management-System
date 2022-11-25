@@ -15,11 +15,11 @@ Hi! Welcome to my reposiory, The **Student Management System**. It is developed 
 
 # Screenshots
 
-![Home Page](Static/home.png)
+![Home Page](static/home.png)
 
 ***
 
-![Add Student](Static/add_student.png)
+![Add Student](static/add_student.png)
 ***
 
-![Update Student](Static/update_student.png)
+![Update Student](static/update_student.png)
