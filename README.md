@@ -3,6 +3,19 @@
 Hi! Welcome to my reposiory, The **Student Management System**. It is developed using **Flask, Bootstrap** and **SQLite3**.
 
 
+## Functionalities
+
+- You can create new students, you can also select the courses they are currently enrolled in.
+- You can view the students details, including their personal and course details.
+- You can update the existing students, their personal details and courses they are currently enrolled in **You can't update the roll number**.
+- You can delete the existing students.
+
+## Future additions
+Currently I am working on the following features
+- Adding a search option for both the **course_id** and **student_id**.
+- Adding new courses.
+- Delete existing courses.
+
 ## Setting up the environment
 
 - Download and extract project source code on to your local machine.
