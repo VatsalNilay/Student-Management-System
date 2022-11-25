@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <div id = "header1" >
+        <center><h1>Student Details</h1></center>
+     
+    </div>
+
+    <div id = "table1">
+        <table id = "personal-details">
+            <tr>
+                <th>Roll Number</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+            </tr>
+            <tr>
+                <td>{{stu.roll_number}}</td>
+                <td>{{stu.first_name}}</td>
+                <td>{{stu.last_name}}</td>
+            </tr>
+        </table>    
+    </div>
+    
+    <div id = "header2">
+        <center><h1>Enrollment list</h1></center>
+    </div>
+    
+    <div id = "table2">
+        <table id = "enroll-table">
+            <tr>
+                <th>S. No.</th>
+                <th>Course Code</th>
+                <th>Course Name</th>
+                <th>Course Description</th>
+            </tr>
+            {% for crs in courses %}
+            <tr>
+                <td>{{loop.index}}</td>
+                <td>{{crs.course_code}}</td>
+                <td>{{crs.course_name}}</td>
+                <td>{{crs.course_description}}</td>
+            </tr>
+            {% endfor %}
+        </table>
+    </div>
+
+    <div id = "footer">
+        <br>
+        <a href="/"><u>Go Back</u></a>
+    </div>
+    
+</body>
+</html>
