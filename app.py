@@ -3,12 +3,15 @@ from flask import Flask
 from flask import render_template
 from flask import request, url_for
 from flask_sqlalchemy import SQLAlchemy
+import os
 
+current_dir = os.path.abspath(os.path.dirname(__file__))
 app = Flask(__name__)
-app.config["SQLALCHEMY_DATABASE_URI"] = "sqlite:///database.sqlite3"    
+app.config["SQLALCHEMY_DATABASE_URI"] = "sqlite:///" + os.path.join(current_dir, "database.sqlite3")    
 db = SQLAlchemy()
 db.init_app(app)
-# app.app_context().push()
+app.app_context().push()
+
 
 class Student(db.Model):
     __tablename__ = "student"
